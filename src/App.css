@@ -1,0 +1,12 @@
+.App {
+margin: 0;
+height: 100vh;
+}
+
+.header {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  height: fit-content;
+  background-color: aquamarine;
+}
