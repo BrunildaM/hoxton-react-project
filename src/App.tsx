@@ -1,30 +1,32 @@
-
-import './App.css'
+import { Routes, Route, Navigate } from "react-router-dom";
+import "./App.css";
+import { EmployeePage } from "./Employers/EmployeePage";
+import { EmployersList } from "./Employers/EmployersList";
+import { Header } from "./Header/Header";
+import { SignIn } from "./Header/NavigationList/SignIn";
+import { SignUpForm } from "./Header/NavigationList/SignUpForm";
+import { Employee } from "./Pages/Employee";
+import { Home } from "./Pages/Home";
+import { NotFound } from "./Pages/NotFound";
 
 function App() {
-  
-
   return (
     <div className="App">
-      <header className='header'>
-      <nav className='header-nav'>
-        <button className='button'>Sign in</button>
-        <button className='button'>Sign up</button>
-      </nav>
-      <h1>HR Solutions</h1>
-      <img src="https://media.istockphoto.com/vectors/hr-solutions-icon-simple-element-illustration-vector-id911451490?k=20&m=911451490&s=612x612&w=0&h=kPD7UBnhhWOyexYGpviwpUq9xZHbGfmGukojvEJl39U=" alt="" width={150}/>
-      </header>
+      <Header />
+      <main>
+        <Routes>
+          <Route index element={<Navigate to="/home" />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/employers" element={<EmployersList  />} />
+          <Route path="/employers/:email" element={<Employee />} />
+          <Route path="/signUp" element={<SignUpForm />} />
+          <Route path="/signIn" element={<SignIn />} />
 
-      <div>
-        <p>Jobs ADV</p>
-        <form>TO post a new job</form>
-      </div>
-
-      <footer>Social media contact</footer>
-      
-     
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
