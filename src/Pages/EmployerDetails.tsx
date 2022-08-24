@@ -1,4 +1,4 @@
-export function Employee () {
+export function EmployerDetails () {
     return (
         <div></div>
     )

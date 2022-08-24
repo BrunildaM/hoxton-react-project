@@ -1,5 +1,5 @@
-import { AdvertisementSection } from "../Advertisement/AdvertisementSection";
-import { Footer } from "../Footer/Footer";
+import { AdvertisementSection } from "../Components/Advertisement/AdvertisementSection";
+import { Footer } from "../Components/Footer/Footer";
 
 export function Home() {
   return (

@@ -1,11 +1,10 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
-import { EmployeePage } from "./Employers/EmployeePage";
-import { EmployersList } from "./Employers/EmployersList";
+import { EmployersList } from "./Pages/EmployersList";
 import { Header } from "./Header/Header";
 import { SignIn } from "./Header/NavigationList/SignIn";
 import { SignUpForm } from "./Header/NavigationList/SignUpForm";
-import { Employee } from "./Pages/Employee";
+import { EmployerDetails } from "./Pages/EmployerDetails";
 import { Home } from "./Pages/Home";
 import { NotFound } from "./Pages/NotFound";
 
@@ -18,7 +17,7 @@ function App() {
           <Route index element={<Navigate to="/home" />} />
           <Route path="/home" element={<Home />} />
           <Route path="/employers" element={<EmployersList  />} />
-          <Route path="/employers/:email" element={<Employee />} />
+          <Route path="/employers/:id" element={<EmployerDetails />} />
           <Route path="/signUp" element={<SignUpForm />} />
           <Route path="/signIn" element={<SignIn />} />
 

@@ -1,6 +1,7 @@
 {
   "employers": [
     {
+      "id": 1,
       "email": "alexanderhipp@email.com",
       "name": "Alexander Hipp",
       "profilePic": "https://images.unsplash.com/profile-1619559142670-fcd58dab16a9image?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff",
@@ -20,6 +21,7 @@
       }
     },
     {
+      "id": 2,
       "email": "julianwan@email.com",
       "name": "Julian Wan",
       "profilePic": "https://images.unsplash.com/profile-1565313960841-3afa95905c92?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff",
@@ -39,6 +41,7 @@
       }
     },
     {
+      "id": 3,
       "email": "michaeldam@email.com",
       "name": "Michael Dam",
       "profilePic": "https://images.unsplash.com/profile-fb-1494602029-41c3d3172600.jpg?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff",
@@ -58,6 +61,7 @@
       }
     },
     {
+      "id": 4,
       "email": "courtneycook@email.com",
       "name": "Courtney Cook",
       "profilePic": "https://images.unsplash.com/profile-1623786828771-26661a8bc4a1image?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff",
@@ -77,6 +81,7 @@
       }
     },
     {
+      "id": 5,
       "email": "christinhume@email.com",
       "name": "Christin Hume",
       "profilePic": "https://images.unsplash.com/profile-1511802548158-cce71a9f2d0b?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff",
@@ -96,6 +101,7 @@
       }
     },
     {
+      "id": 6,
       "email": "vinceveras@email.com",
       "name": "Vince Veras",
       "profilePic": "https://images.unsplash.com/profile-1627890156871-045f1e01204aimage?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff",
@@ -115,6 +121,7 @@
       }
     },
     {
+      "id": 6,
       "email": "hannahbusing@email.com",
       "name": "Hannah Busing",
       "profilePic": "https://images.unsplash.com/profile-1582063050734-acc8772dc1eaimage?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff",
@@ -134,6 +141,7 @@
       }
     },
     {
+      "id": 7,
       "email": "edpylypenko@email.com",
       "name": "Ed Pylypenko",
       "profilePic": "https://images.unsplash.com/profile-1572172925166-0f68749ce20fimage?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff",
@@ -155,17 +163,17 @@
   ],
 
   "users": [
-      {
-          "id": 1,
-          "name": "Brunilda Muco",
-          "email": "brunildamuco@email.com",
-          "password": "bruna123"
-      },
-      {
-        "id": 2,
-        "name": "Anna Smith",
-        "email": "annasmith@email.com",
-        "password": "anna123"
+    {
+      "id": 1,
+      "name": "Brunilda Muco",
+      "userName": "BM123",
+      "password": "bruna123"
+    },
+    {
+      "id": 2,
+      "name": "Anna Smith",
+      "userName": "AS456",
+      "password": "anna123"
     }
   ]
 }
