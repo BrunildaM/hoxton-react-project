@@ -2,7 +2,7 @@ import './Button.css'
 
 type Props = {
   children: string;
-  variant?: "signIn" | "signUp";
+  variant?: "signIn" | "signUp" | "logIn";
 };
 
 export default function Button({ children, variant, ...rest }: Props) {
@@ -10,6 +10,7 @@ export default function Button({ children, variant, ...rest }: Props) {
       colour: "black", 
       paddingTop: "0.5rem",
       paddingBottom: "0.5rem",
+      margin: "0.5rem",
       cursor: "pointer"
     };
   
@@ -22,8 +23,14 @@ export default function Button({ children, variant, ...rest }: Props) {
     if (variant === "signUp") {
       style.backgroundColor = "#6c757d";
       style.paddingBottom = "0.7rem";
-      style.paddingBottom = "0.7rem";
+      style.paddingTop = "0.7rem";
       
+    }
+
+    if (variant === "logIn") {
+      style.colour = "rgb(104, 85, 224)";
+      style.backgroundColor = "rgba(255, 255, 255, 1)";
+      style.border = "1px solid rgba(104, 85, 224, 1)"
     }
 
     return (

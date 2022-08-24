@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
+import { SearchEmployee } from "../Components/Employers/SearchEmployee";
 import { Employee, SingleEmployer} from "../Components/Employers/SingleEmployer";
 
 export function EmployersList() {
   const [employers, setEmployers] = useState<Employee[]>([]);
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     fetch("http://localhost:4000/employers")
@@ -10,15 +12,28 @@ export function EmployersList() {
       .then((employersFromDb) => setEmployers(employersFromDb));
   }, []);
 
+
+  const filteredEmployers = employers.filter((employer) =>
+  employer.name.toLowerCase().includes(search.toLowerCase())
+);
+
   return (
     <div>
+     <form>
+      <input
+        className="search-employer"
+        type="text"
+        placeholder="Name or job position"
+        onChange={(filteredEmployers) => {
+          setSearch(filteredEmployers.target.value);
+        }}
+      />
+    </form>
       <ul>
-        {employers.map((employer) => (
+        {filteredEmployers.map((employer) => (
           <SingleEmployer key={employer.id} employer={employer} />
         ))}
       </ul>
-      // when you click on one employer you can see all the details related to
-      him/her so get redirected to EmployeePage
     </div>
   );
 }

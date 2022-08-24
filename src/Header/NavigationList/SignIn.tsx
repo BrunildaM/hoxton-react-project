@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import Button from "../../Components/Buttons/Buton";
 
 type User ={
     id: number
@@ -31,7 +33,10 @@ export function SignIn () {
           <input type="password" name="pass" required />
         </div>
         <div className="button-container">
-          <input type="submit" />
+          {/* <input type="submit" /> */}
+         <Link to= '/employers'>
+         <Button variant="logIn" >Log In</Button>
+         </Link> 
         </div>
       </form>
       </div>
