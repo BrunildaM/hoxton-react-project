@@ -175,5 +175,51 @@
       "userName": "AS456",
       "password": "anna123"
     }
+  ],
+
+  "jobs": [
+    {
+      "id": 1,
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8ovJHPrFHLdeRvBiIeeQejWyf9nz4KxGqbh5sR2c&s",
+      "position": "Senior Frontend Developer",
+      "role": "Frontend",
+      "level": "Senior",
+      "contract": "Full time",
+      "languages": ["HTML", "CSS", "JavaScript"],
+      "posted": "1d ago"
+    },
+    {
+      "id": 2,
+      "logo": "https://images-platform.99static.com/FWvZUrBBgg_FQbdXlquX0lf2KSI=/500x500/top/smart/99designs-contests-attachments/28/28801/attachment_28801044",
+      "position": "Fullstack Developer",
+      "role": "Fullstack",
+      "level": "Midweight",
+      "contract": "Part time",
+      "languages": ["Python"],
+      "tools": ["React"],
+      "posted": "1w ago"
+    },
+    {
+      "id": 3,
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8ovJHPrFHLdeRvBiIeeQejWyf9nz4KxGqbh5sR2c&s",
+      "position": "Junior Frontend Developer",
+      "role": "Frontend",
+      "level": "Junior",
+      "contract": "Contract",
+      "languages": ["HTML", "CSS", "JavaScript"],
+      "posted": "3d ago"
+    },
+    {
+      "id": 4,
+      "logo": "https://upload.wikimedia.org/wikipedia/en/7/7b/Software-Freedom-Conservancy-Logo.svg",
+      "position": "Software Engineer",
+      "role": "Fullstack",
+      "level": "Midweight",
+      "contract": "Full time",
+      "languages": ["JavaScript"],
+      "tools": ["Ruby", "Sass"],
+      "posted": "2w ago"
+    }
+    
   ]
 }

@@ -15,8 +15,8 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
-  background: #f7f0e9;
-  transition: .6s;
+  background: #ece6e0;
+
 }
 
 
