@@ -29,10 +29,9 @@ function App() {
         .then((r) => r.json())
         .then((userFromServer) => {
           setUser(userFromServer);
-          navigate("/employers");
         });
     } else {
-      navigate("/signIn");
+      navigate("/home");
     }
   }, [localStorage.id]);
 

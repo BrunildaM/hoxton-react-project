@@ -1,4 +1,5 @@
 
+import { useNavigate } from "react-router-dom";
 import Button from "../../Components/Buttons/Buton";
 
 export type User ={
@@ -15,6 +16,8 @@ type Props = {
 
 export function SignIn ({signIn}: Props) {
 
+  let navigate = useNavigate()
+
   function handleSubmit (event: any) {
     event.preventDefault()
     let username = event.target.username.value 
@@ -25,6 +28,7 @@ export function SignIn ({signIn}: Props) {
     .then((user: User) => {
      if (user.password === password)  {
       signIn(user)
+      navigate("/employers");
 
      } else {
        alert("Check your username/password please!")
