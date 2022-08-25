@@ -1,11 +1,11 @@
 import { AdvForm } from "./AdvForm";
-import { JobsAdv } from "./JobsAdv";
+import { JobsAdv, Props } from "./JobsAdv";
 
-export function AdvertisementSection () {
+export function AdvertisementSection ({jobs, setJobs}: Props) {
     return (
         <div>
-            <JobsAdv />
-            <AdvForm />
+            <JobsAdv jobs={jobs} setJobs={setJobs} />
+            <AdvForm jobs={jobs} setJobs={setJobs} />
         </div>
     )
 }

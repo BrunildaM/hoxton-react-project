@@ -7,7 +7,7 @@ type Props = {
 
 export default function Button({ children, variant, ...rest }: Props) {
     let style: any = {
-      colour: "black", 
+      // colour: "black", 
       paddingTop: "0.5rem",
       paddingBottom: "0.5rem",
       margin: "0.5rem",
@@ -34,7 +34,7 @@ export default function Button({ children, variant, ...rest }: Props) {
     }
 
     if (variant === "delete") {
-      style.colour = "rgb(104, 85, 224)";
+      style.colour = "white";
       style.backgroundColor = "red";
       style.border = "1px solid red"
     }

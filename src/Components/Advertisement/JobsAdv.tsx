@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { SingleEmployer } from "../Employers/SingleEmployer";
 import { SingleJob } from "./SingleJob";
 
 export type Job = {
@@ -14,8 +13,13 @@ export type Job = {
   posted: string;
 };
 
-export function JobsAdv() {
-  const [jobs, setJobs] = useState<Job[]>([]);
+export type Props = {
+  jobs: Job[]
+  setJobs: React.Dispatch<React.SetStateAction<Job[]>>
+}
+
+export function JobsAdv({jobs, setJobs}: Props) {
+  
 
   useEffect(() => {
     fetch("http://localhost:4000/jobs")
@@ -23,17 +27,15 @@ export function JobsAdv() {
       .then((jobsFromDb) => setJobs(jobsFromDb));
   }, []);
 
-//it deletes from the page only after you refresh it :/ needs to be fixed
-  function deleteAd (job: Job) {
+  function deleteAd(job: Job) {
     fetch(`http://localhost:4000/jobs/${job.id}`, {
-      method: 'DELETE'
-    })
+      method: "DELETE",
+    });
 
-    const jobsCopy = JSON.parse(JSON.stringify(jobs))
-    let jobToBeDeleted = jobsCopy.find((target: Job) => target.id === job.id)
-   jobsCopy.filter((job: Job) => job.id !== jobToBeDeleted.id)
+    const jobsCopy = JSON.parse(JSON.stringify(jobs));
+    let updatedJobs = jobsCopy.filter((target: Job) => target.id !== job.id);
 
-   setJobs(jobsCopy)
+    setJobs(updatedJobs);
   }
 
   return (
@@ -43,7 +45,7 @@ export function JobsAdv() {
       ) : (
         <ul>
           {jobs.map((job) => (
-            <SingleJob key={job.id} job={job} deleteAd={deleteAd}/>
+            <SingleJob key={job.id} job={job} deleteAd={deleteAd} />
           ))}
         </ul>
       )}

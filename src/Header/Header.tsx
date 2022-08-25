@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { NameAndLogo } from "./NameAndLogo";
-import { SignUp } from "./NavigationList/SignUp";
+import { SignUp } from "./NavigationList/SignUpForm";
 import "./Header.css";
 import Button from "../Components/Buttons/Buton";
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Button from "../../Components/Buttons/Buton";
 
 type User ={
@@ -9,9 +9,15 @@ type User ={
     password: string
 }
 
+
+// put all the if statemants here to work as you want it OKAY
+
+
 export function SignIn () {
     const [users, setUsers] = useState<User[]>([]);
-    const [isSubmitted, setIsSubmitted] = useState(false);
+    // const [isSubmitted, setIsSubmitted] = useState(false);
+
+    let navigate = useNavigate()
 
     useEffect(()=> {
         fetch("http://localhost:4000/users")
@@ -34,9 +40,14 @@ export function SignIn () {
         </div>
         <div className="button-container">
           {/* <input type="submit" /> */}
-         <Link to= '/employers'>
-         <Button variant="logIn" >Log In</Button>
-         </Link> 
+         {/* <Link to= '/employers'> */}
+         <Button 
+         //@ts-ignore
+         onClick={ () => 
+          navigate('/employers')
+        }
+         variant="logIn" >Log In</Button>
+         {/* </Link>  */}
         </div>
       </form>
       </div>
