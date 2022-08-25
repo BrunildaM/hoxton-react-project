@@ -1,6 +1,8 @@
 
 import { useNavigate } from "react-router-dom";
 import Button from "../../Components/Buttons/Buton";
+import { Footer } from "../../Components/Footer/Footer";
+import './SignIn.css'
 
 export type User ={
     id: number
@@ -40,8 +42,11 @@ export function SignIn ({signIn}: Props) {
 
 
     return (
-    <div className="form">
+     
+    <div className="signIn-form">
+     
       <form  onSubmit={handleSubmit}>
+      <h1 className="signIn-form-header">Welcome to HR SOLUTIONS</h1>
         <div className="input-container">
           <label>Username </label>
           <input type="text" name="username" required />
@@ -57,7 +62,10 @@ export function SignIn ({signIn}: Props) {
      
         </div>
       </form>
+      
       </div>
+     
+    
     )
     
 }
