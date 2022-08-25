@@ -2,7 +2,7 @@ import './Button.css'
 
 type Props = {
   children: string;
-  variant?: "signIn" | "signUp" | "logIn";
+  variant?: "signIn" | "signUp" | "logIn" | "delete";
 };
 
 export default function Button({ children, variant, ...rest }: Props) {
@@ -31,6 +31,12 @@ export default function Button({ children, variant, ...rest }: Props) {
       style.colour = "rgb(104, 85, 224)";
       style.backgroundColor = "rgba(255, 255, 255, 1)";
       style.border = "1px solid rgba(104, 85, 224, 1)"
+    }
+
+    if (variant === "delete") {
+      style.colour = "rgb(104, 85, 224)";
+      style.backgroundColor = "red";
+      style.border = "1px solid red"
     }
 
     return (

@@ -17,7 +17,11 @@
       "updatedAt": "2021-08-24",
       "jobs": {
         "jobsCount": 3,
-        "positions": ["Java", "NodeJs", "React"]
+        "positions": [
+          "Java",
+          "NodeJs",
+          "React"
+        ]
       }
     },
     {
@@ -37,7 +41,11 @@
       "updatedAt": "2022-07-16",
       "jobs": {
         "jobsCount": 3,
-        "positions": ["Java", "NodeJs", "React"]
+        "positions": [
+          "Java",
+          "NodeJs",
+          "React"
+        ]
       }
     },
     {
@@ -57,7 +65,11 @@
       "updatedAt": "2019-08-24",
       "jobs": {
         "jobsCount": 3,
-        "positions": ["Java", "NodeJs", "React"]
+        "positions": [
+          "Java",
+          "NodeJs",
+          "React"
+        ]
       }
     },
     {
@@ -77,7 +89,11 @@
       "updatedAt": "2019-08-24",
       "jobs": {
         "jobsCount": 3,
-        "positions": ["Java", "NodeJs", "React"]
+        "positions": [
+          "Java",
+          "NodeJs",
+          "React"
+        ]
       }
     },
     {
@@ -97,7 +113,11 @@
       "updatedAt": "2019-08-24",
       "jobs": {
         "jobsCount": 3,
-        "positions": ["Java", "NodeJs", "React"]
+        "positions": [
+          "Java",
+          "NodeJs",
+          "React"
+        ]
       }
     },
     {
@@ -117,11 +137,15 @@
       "updatedAt": "2019-08-24",
       "jobs": {
         "jobsCount": 3,
-        "positions": ["Java", "NodeJs", "React"]
+        "positions": [
+          "Java",
+          "NodeJs",
+          "React"
+        ]
       }
     },
     {
-      "id": 6,
+      "id": 7,
       "email": "hannahbusing@email.com",
       "name": "Hannah Busing",
       "profilePic": "https://images.unsplash.com/profile-1582063050734-acc8772dc1eaimage?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff",
@@ -137,11 +161,15 @@
       "updatedAt": "2019-08-24",
       "jobs": {
         "jobsCount": 3,
-        "positions": ["Java", "NodeJs", "React"]
+        "positions": [
+          "Java",
+          "NodeJs",
+          "React"
+        ]
       }
     },
     {
-      "id": 7,
+      "id": 8,
       "email": "edpylypenko@email.com",
       "name": "Ed Pylypenko",
       "profilePic": "https://images.unsplash.com/profile-1572172925166-0f68749ce20fimage?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff",
@@ -157,11 +185,14 @@
       "updatedAt": "2019-08-24",
       "jobs": {
         "jobsCount": 3,
-        "positions": ["Java", "NodeJs", "React"]
+        "positions": [
+          "Java",
+          "NodeJs",
+          "React"
+        ]
       }
     }
   ],
-
   "users": [
     {
       "id": 1,
@@ -176,7 +207,6 @@
       "password": "anna123"
     }
   ],
-
   "jobs": [
     {
       "id": 1,
@@ -185,7 +215,11 @@
       "role": "Frontend",
       "level": "Senior",
       "contract": "Full time",
-      "languages": ["HTML", "CSS", "JavaScript"],
+      "languages": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
       "posted": "1d ago"
     },
     {
@@ -195,8 +229,12 @@
       "role": "Fullstack",
       "level": "Midweight",
       "contract": "Part time",
-      "languages": ["Python"],
-      "tools": ["React"],
+      "languages": [
+        "Python"
+      ],
+      "tools": [
+        "React"
+      ],
       "posted": "1w ago"
     },
     {
@@ -206,7 +244,11 @@
       "role": "Frontend",
       "level": "Junior",
       "contract": "Contract",
-      "languages": ["HTML", "CSS", "JavaScript"],
+      "languages": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
       "posted": "3d ago"
     },
     {
@@ -216,10 +258,14 @@
       "role": "Fullstack",
       "level": "Midweight",
       "contract": "Full time",
-      "languages": ["JavaScript"],
-      "tools": ["Ruby", "Sass"],
+      "languages": [
+        "JavaScript"
+      ],
+      "tools": [
+        "Ruby",
+        "Sass"
+      ],
       "posted": "2w ago"
     }
-    
   ]
 }

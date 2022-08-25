@@ -23,6 +23,19 @@ export function JobsAdv() {
       .then((jobsFromDb) => setJobs(jobsFromDb));
   }, []);
 
+//it deletes from the page only after you refresh it :/ needs to be fixed
+  function deleteAd (job: Job) {
+    fetch(`http://localhost:4000/jobs/${job.id}`, {
+      method: 'DELETE'
+    })
+
+    const jobsCopy = JSON.parse(JSON.stringify(jobs))
+    let jobToBeDeleted = jobsCopy.find((target: Job) => target.id === job.id)
+   jobsCopy.filter((job: Job) => job.id !== jobToBeDeleted.id)
+
+   setJobs(jobsCopy)
+  }
+
   return (
     <div>
       {jobs.length === 0 ? (
@@ -30,7 +43,7 @@ export function JobsAdv() {
       ) : (
         <ul>
           {jobs.map((job) => (
-            <SingleJob key={job.id} job={job} />
+            <SingleJob key={job.id} job={job} deleteAd={deleteAd}/>
           ))}
         </ul>
       )}

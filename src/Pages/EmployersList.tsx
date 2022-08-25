@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { SearchEmployee } from "../Components/Employers/SearchEmployee";
 import { Employee, SingleEmployer} from "../Components/Employers/SingleEmployer";
 
 export function EmployersList() {
@@ -23,7 +22,7 @@ export function EmployersList() {
       <input
         className="search-employer"
         type="text"
-        placeholder="Name or job position"
+        placeholder="Search by name"
         onChange={(filteredEmployers) => {
           setSearch(filteredEmployers.target.value);
         }}
