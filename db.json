@@ -21,7 +21,8 @@
           "Java",
           "NodeJs",
           "React"
-        ]
+        ],
+        "userId": "BM123"
       }
     },
     {
@@ -45,7 +46,8 @@
           "Java",
           "NodeJs",
           "React"
-        ]
+        ],
+        "userId": "BM123"
       }
     },
     {
@@ -69,7 +71,8 @@
           "Java",
           "NodeJs",
           "React"
-        ]
+        ],
+        "userId": "BM123"
       }
     },
     {
@@ -93,7 +96,8 @@
           "Java",
           "NodeJs",
           "React"
-        ]
+        ],
+        "userId": "AS456"
       }
     },
     {
@@ -117,7 +121,8 @@
           "Java",
           "NodeJs",
           "React"
-        ]
+        ],
+        "userId": "AS456"
       }
     },
     {
@@ -141,7 +146,8 @@
           "Java",
           "NodeJs",
           "React"
-        ]
+        ],
+        "userId": "BM123"
       }
     },
     {
@@ -165,7 +171,8 @@
           "Java",
           "NodeJs",
           "React"
-        ]
+        ],
+        "userId": "AS456"
       }
     },
     {
@@ -189,46 +196,26 @@
           "Java",
           "NodeJs",
           "React"
-        ]
+        ],
+        "userId": "AS456"
       }
     }
   ],
   "users": [
     {
-      "id": 1,
       "name": "Brunilda Muco",
-      "userName": "BM123",
+      "id": "BM123",
       "password": "bruna123"
     },
     {
-      "id": 2,
       "name": "Anna Smith",
-      "userName": "AS456",
+      "id": "AS456",
       "password": "anna123"
     },
     {
-      "name": "Ina",
-      "username": "Ina123",
-      "password": "12345",
-      "id": 3
-    },
-    {
-      "name": "Ela",
-      "username": "Ela123",
-      "password": "456",
-      "id": 4
-    },
-    {
-      "name": "Ani",
-      "username": "Ani123",
-      "password": "123",
-      "id": 5
-    },
-    {
-      "name": "Edi",
-      "username": "Edi123",
-      "password": "123",
-      "id": 6
+      "name": "Genta",
+      "id": "g123",
+      "password": "1234"
     }
   ],
   "jobs": [

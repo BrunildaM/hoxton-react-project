@@ -7,6 +7,7 @@
     color: rgb(26, 5, 5);
     font: bolder;
     margin: 1rem;
+    align-items: center;
     }
   
     .signUp-form-header {

@@ -1,53 +1,56 @@
-import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+
 import Button from "../../Components/Buttons/Buton";
 
-type User ={
+export type User ={
     id: number
     name: string
     username: string
     password: string
 }
 
+type Props = {
+ 
+  signIn: (user: User)=> void
+}
 
-// put all the if statemants here to work as you want it OKAY
+export function SignIn ({signIn}: Props) {
+
+  function handleSubmit (event: any) {
+    event.preventDefault()
+    let username = event.target.username.value 
+    let password = event.target.password.value
+
+    fetch(`http://localhost:4000/users/${username}`)
+    .then(r => r.json())
+    .then((user: User) => {
+     if (user.password === password)  {
+      signIn(user)
+
+     } else {
+       alert("Check your username/password please!")
+
+     }
+    })
+
+  }
 
 
-export function SignIn () {
-    const [users, setUsers] = useState<User[]>([]);
-    // const [isSubmitted, setIsSubmitted] = useState(false);
-
-    let navigate = useNavigate()
-
-    useEffect(()=> {
-        fetch("http://localhost:4000/users")
-        .then(r=> r.json())
-        .then(usersFromDb => setUsers(usersFromDb))
-    },[])
-  
     return (
     <div className="form">
-      <form onSubmit={event =>{
-    event.preventDefault()
-    }}>
+      <form  onSubmit={handleSubmit}>
         <div className="input-container">
           <label>Username </label>
-          <input type="text" name="uname" required />
+          <input type="text" name="username" required />
         </div>
         <div className="input-container">
           <label>Password </label>
-          <input type="password" name="pass" required />
+          <input type="password" name="password" required />
         </div>
         <div className="button-container">
-          {/* <input type="submit" /> */}
-         {/* <Link to= '/employers'> */}
+        
          <Button 
-         //@ts-ignore
-         onClick={ () => 
-          navigate('/employers')
-        }
          variant="logIn" >Log In</Button>
-         {/* </Link>  */}
+     
         </div>
       </form>
       </div>

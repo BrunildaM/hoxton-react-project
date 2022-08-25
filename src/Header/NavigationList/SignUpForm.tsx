@@ -24,7 +24,6 @@ export function SignUp() {
       password: password,
     };
 
-
     fetch("http://localhost:4000/users", {
       method: "POST",
       headers: {
@@ -118,13 +117,13 @@ export function SignUp() {
           <br />
           <Button
             //@ts-ignore
-            onClick={() => {createNewUser()
-            confirm("Welcome on board!")}}
+            onClick={() => {
+              createNewUser();
+            }}
             variant="signIn"
           >
             Submit
           </Button>
-          {/* <input type="submit" value="Submit"  onSubmit={createNewUser}/> */}
         </form>
       </header>
     </div>
